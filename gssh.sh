@@ -32,6 +32,9 @@ function listen {
 
 echo please mount a network drive that 
 echo you have read + write access to
+if [ $(whoami) == root ]; then
+echo $( tput setaf 5 )you are root
+else
 tput setaf 3
 echo "╔════════════════════════════════════════╗"
 echo "║ WARNING!! in testing i had to run this ║"
@@ -40,6 +43,7 @@ echo "║ to have permissions to write to        ║"
 echo "║ the network drive                      ║"
 echo "║ "$( tput setaf 10 )this only applies to broadcast mode$( tput setaf 3 )"    ║"
 echo "╚════════════════════════════════════════╝"
+fi
 tput sgr0
 read -p "Network drive path: " GSSHMNT
 
