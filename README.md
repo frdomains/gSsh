@@ -3,6 +3,7 @@ ssh that u can make multiple receivers for || in bash AND batch
 
 **you can use a windows machine to control a linux machine and vice versa**
 
+## THIS DOES NOT WORK DO NOT USE IT INSTEAD DOWNLOAD THE FILES
 Quick setup:
 
 Linux: paste this into a terminal window
